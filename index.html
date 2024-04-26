@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number-system-conversion</title>
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Number Converter</h1>
+        <div class="input-box">
+            <label for="decimal-input">Decimal:</label>
+            <input type="text" id="decimal-input" oninput="convertNumber('decimal', this.value)" placeholder="Enter decimal">
+        </div>
+        <div class="input-box">
+            <label for="binary-input">Binary:</label>
+            <input type="text" id="binary-input" oninput="convertNumber('binary', this.value)" placeholder="Enter binary">
+        </div>
+        <div class="input-box">
+            <label for="octal-input">Octal:</label>
+            <input type="text" id="octal-input" oninput="convertNumber('octal', this.value)" placeholder="Enter octal">
+        </div>
+        <div class="input-box">
+            <label for="hexadecimal-input">Hexadecimal:</label>
+            <input type="text" id="hexadecimal-input" on
+[8:57 am, 11/04/2024]  : input="convertNumber('hexadecimal', this.value)" placeholder="Enter hexadecimal">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
