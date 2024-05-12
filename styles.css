@@ -1,14 +1,10 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 20px;
-    background-image: url("jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .container {
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
 }
@@ -22,4 +18,20 @@ input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
 }
