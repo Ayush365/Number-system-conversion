@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Converter</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -14,23 +15,40 @@
         <h1>Number Converter</h1>
         <div class="input-box">
             <label for="decimal-input">Decimal:</label>
-            <input type="text" id="decimal-input" oninput="convertNumber('decimal', this.value)" placeholder="Enter decimal">
+            <input type="text" id="decimal-input" oninput="convertNumber('decimal', this.value)" placeholder="Enter decimal" value="">
         </div>
         <div class="input-box">
             <label for="binary-input">Binary:</label>
-            <input type="text" id="binary-input" oninput="convertNumber('binary', this.value)" placeholder="Enter binary">
+            <input type="text" id="binary-input" oninput="convertNumber('binary', this.value)" placeholder="Enter binary" value="">
         </div>
         <div class="input-box">
             <label for="octal-input">Octal:</label>
-            <input type="text" id="octal-input" oninput="convertNumber('octal', this.value)" placeholder="Enter octal">
+            <input type="text" id="octal-input" oninput="convertNumber('octal', this.value)" placeholder="Enter octal" value="">
         </div>
         <div class="input-box">
             <label for="hexadecimal-input">Hexadecimal:</label>
-            <input type="text" id="hexadecimal-input" oninput="convertNumber('hexadecimal', this.value)" placeholder="Enter hexadecimal">
+            <input type="text" id="hexadecimal-input" oninput="convertNumber('hexadecimal', this.value)" placeholder="Enter hexadecimal" value="">
+        </div>
+
+        <div id="history">
+            <h2>Input History:</h2>
+            <table id="history-table">
+                <thead>
+                    <tr>
+                        <th>Decimal</th>
+                        <th>Binary</th>
+                        <th>Octal</th>
+                        <th>Hexadecimal</th>
+                    </tr>
+                </thead>
+                <tbody id="history-body">
+                </tbody>
+            </table>
         </div>
     </div>
 
     <script src="script.js"></script>
+        
 </body>
 
 </html>
